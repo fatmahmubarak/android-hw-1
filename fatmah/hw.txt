@@ -2,19 +2,38 @@ public class HelloWorld{
 
      public static void main(String []args){
         System.out.println("Hello World");
-
-      for(int o= 1; o <= 3; o++){
-           System.out.println(car(18,"فاطمه"));
-      }
-       
+    //   for(int o= 1; o <= 3; o++){
+    //       System.out.println(car(18,"فاطمه"));
+    //   }
+      
+    //   for(int o= 1; o <= 3; o++){
+      car2();
+    //   }
      }
-     
+    //  الحل الاول
      public static String car (int v , String i){
          if (v >= 18){
-             return "مبروك يا" + " "+ i +" "+ "سوف تحصل على رخصه القياده" ;
+             return "مبروك يا" + " "+i +" "+ "سوف تحصل على رخصه القياده" ;
              
          }else{
-             return "للاسف يا"+" "+ i +" "+"ما زلت صغيرا للحصول على رخصه";
+             return "للاسف يا"+" "+i+" "+"ما زلت صغيرا للحصول على رخصه";
+             }
+     }
+     
+// الحل الثاني
+// ممكن احط الفور لوب فوق بالمناداه واطبعها ثلاث مرات وهم اقدر احط الفور داخل اف عشان لما انادي الفانكشن تطبع لي اياها ثلاث مرات بدال  طباعه المنادا نفسهاه
+     
+     public static void car2 (){
+          int g = 18;
+          String r = "فاطمه";
+          if (g >= 18){
+               for(int o= 1; o <= 3; o++){
+             System.out.println( "مبروك يا" + " "+r+" "+ "سوف تحصل على رخصه القياده") ;
+               }
+         }else{
+              for(int o= 1; o <= 3; o++){
+             System.out.println( "للاسف يا"+" "+r+" "+"ما زلت صغيرا للحصول على رخصه");
+              }
              }
      }
 }
